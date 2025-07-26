@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syukuran Pernikahan Rey & Tresna</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f4;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    .judul {
+      text-align: center;
+    }
+    .judul h1 {
+      margin: 0;
+    }
+    .foto {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .foto img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .info {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .info h2 {
+      margin-bottom: 5px;
+    }
+    .info p {
+      margin: 4px 0;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 30px;
+      color: #777;
+    }
+    .rsvp {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .rsvp form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    .rsvp input, .rsvp select, .rsvp textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .rsvp button {
+      padding: 10px 20px;
+      background-color: #db7093;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .rsvp button:hover {
+      background-color: #c35e81;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="judul">
+      <h3>SYUKURAN PERNIKAHAN</h3>
+      <h1>Rey & Tresna</h1>
+    </div>
+
+    <div class="foto">
+      <img src="https://i.ibb.co/VLwVmWR/Undangan-Syukuran-Pernikahan-Rey-Tresna.png" alt="Rey dan Tresna">
+    </div>
+
+    <div class="info">
+      <p>Dengan penuh syukur atas berkat Tuhan dalam pernikahan anak kami, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara</p>
+      <h2>Syukuran Pernikahan</h2>
+      <p><strong>Hari/Tanggal:</strong> Sabtu, 2 Agustus 2025</p>
+      <p><strong>Waktu:</strong> Pukul 18.00 WITA – Selesai</p>
+      <p><strong>Tempat:</strong> Rumah Mama Marce Selan - Ratu Kaja, Tungganamo</p>
+
+      <p style="margin-top: 20px;"><strong>Hormat kami,</strong></p>
+      <p>Mama Marce Selan - Ratu Kaja</p>
+      <p>Bapak Sony Selan</p>
+      <p>Bapak Veky Robinson Selan</p>
+      <p>Bapak Patrick Selan</p>
+    </div>
+
+    <div class="rsvp">
+      <h2>Konfirmasi Kehadiran (RSVP)</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="nama" placeholder="Nama lengkap" required>
+        <select name="kehadiran" required>
+          <option value="">-- Pilih Kehadiran --</option>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+        <textarea name="pesan" rows="3" placeholder="Ucapan atau pesan (opsional)"></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>Mohon maaf apabila ada kesalahan dalam penulisan nama dan gelar</p>
+    </div>
+  </div>
+</body>
+</html>
