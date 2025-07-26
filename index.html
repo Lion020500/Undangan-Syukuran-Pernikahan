@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Syukuran Pernikahan Rey & Tresna</title>
   <style>
     body {
@@ -85,7 +85,7 @@
       <h3>Konfirmasi Kehadiran (RSVP)</h3>
       <form id="rsvpForm">
         <input type="text" name="nama" placeholder="Nama Anda" required>
-        <select name="kehadiran" required>
+        <select name="hadir" required>
           <option value="">-- Konfirmasi Kehadiran --</option>
           <option value="Hadir">Hadir</option>
           <option value="Tidak Hadir">Tidak Hadir</option>
@@ -108,7 +108,7 @@
       const data = Object.fromEntries(formData.entries());
 
       try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbwOyoLC5f_UEU4rQUm76mCb08RuhIguFXM0zz7-EG0Z3TtLhtoMryVsOhd52H-PPL6R/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbwmhmf1n1bxr2NfXWKUtfL9oWA4hMgHM_EfLCjUAliQasEpDFFx-pHLvseRaa0X83SJ/exec', {
           method: 'POST',
           body: new URLSearchParams(data)
         });
